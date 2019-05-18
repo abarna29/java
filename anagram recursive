@@ -1,6 +1,5 @@
 class Main
 {
-	// Utility function to swap two characters in a character array
 	private static void swap(char[] ch, int i, int j)
 	{
 		char temp = ch[i];
@@ -8,10 +7,10 @@ class Main
 		ch[j] = temp;
 	}
 
-	// Recursive function to generate all permutations of a String
 	private static void permutations(char[] ch, int currentIndex)
 	{
-		if (currentIndex == ch.length - 1) {
+		if (currentIndex == ch.length - 1) 
+		{
 			System.out.println(String.valueOf(ch));
 		}
 
@@ -22,8 +21,6 @@ class Main
 			swap(ch, currentIndex, i);
 		}
 	}
-
-	// generate all permutations of a String in Java
 	public static void main(String[] args)
 	{
 		String s = "ABC";
